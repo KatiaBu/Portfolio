@@ -1,81 +1,82 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>KB_Portfolio</title>
 
-	<!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <title>MyPortfolio</title>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
-<div class="container">
-    <header> 
+    <div class="container">
+        <header>
+            <img src="mainUpFoto.jpg" alt="portfolio-main-foto">
+            <nav>
+                <ul id="menu">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <img src="mainUpFoto.jpg" alt="portfolio-main-foto">
+        <main>
+            <article id="about">
+                <h1>Kilka słów o mnie</h1>
+                <div class="flex-container">
+                    <div class='about-wrapper'><img src="myFoto.jpg" alt="Mój portret"></div>
+                    <div class='about-desc-wrapper'>
+                        <p>I graduated in oceanography, after a few years in the laboratory, I decided to change my
+                            life.</p>
+                        <p>I started my career as a qa engineer. Testing has become not only my job but also my passion.
+                        </p>
+                        <p>However, I still don't have enough, that's why I'm still developing. Currently, I decided to
+                            try my hand at web technology.</p>
+                        <strong>
+                            <p><a href="#" class=cv>HERE</a>, you can find my resume.</p>
+                        </strong>
+                    </div>
+                </div>
+            </article>
 
-	    <nav>
-		    <ul id="menu">
-			    <li><a href="#about">About me</a></li>
-			    <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#footer">Contact</a></li>
-		    </ul>
-	    </nav>
-	
-    </header>
+            <article id='skills'>
+                <h1>MY SKILLS</h1>
+                <div class="flex-container">
+                    <div class="skills-wrapper"><img src="skills1.jpg" alt="Calendar"></div>
+                    <div class="skills-wrapper"><img src="tools.jpg" alt="Clock"></div>
+                    <div class="skills-wrapper"><img src="cert.jpg" alt="Notes"></a>
+                    </div>
+            </article>
 
-<section>
-    <article id="about">
-        <h1>Kilka słów o mnie</h1>
-        <div class="flex-container">            
-            <div class='about-wrapper'><img src="myFoto.jpg" alt ="Mój portret"></div>
-            <div class='about-desc-wrapper'>                
-                <p>I graduated in oceanography, after a few years in the laboratory, I decided to change my life.</p> 
-                <p>I started my career as a qa engineer. Testing has become not only my job but also my passion.</p> 
-                <p>However, I still don't have enough, that's why I'm still developing. Currently, I decided to try my hand at web technology.</p>
-                <strong><p><a href="#" class=cv>HERE</a>, you can find my resume.</p></strong>
-            </div> 
-        </div>     
-    </article>
+            <article>
+                <div id='project'>
+                    <h1>PORTFOLIO</h1>
+                </div>
+                <div class="flex-container">
+                    <a href="#" class="img-wrapper"><img src="calendar.jpg" alt="Calendar"></a>
+                    <a href="#" class="img-wrapper"><img src="clock.jpg" alt="Clock"></a>
+                    <a href="#" class="img-wrapper"><img src="notes.jpg" alt="Notes"></a>
+                    <a href="#" class="img-wrapper"><img src="cytat.jpg" alt="Quotation"></a>
+                </div>
+            </article>
+        </main>
 
-    <article id='skills'>
-            <h1>MY SKILLS</h1>
-            <div class="flex-container">
-                    <a href="#" class="skills-wrapper"><img src="skills1.jpg" alt ="Calendar"></a>
-                    <a href="#" class="skills-wrapper"><img src="tools.jpg" alt ="Clock"></a>
-                    <a href="#" class="skills-wrapper"><img src="cert.jpg" alt ="Notes"></a>             
-                </div>      
-    </article>
+        <footer id="footer">
+            <h1>CONTACT</h1>
+            <img src="business-card.jpg" alt="business-card-foto">
+            <address>
+                <p>feel free to contact me:</p><br>
+                E-mail: <a href="kat.choluj@gmail.com">kat.choluj@gmail.com</a><br><br>
+                Phone number: <a href="tel:601266006">601266006</a>
+            </address>
+        </footer>
 
-    <article>
-        <div id='project'>
-            <h1>PORTFOLIO</h1>
-        </div> 
-        <div class="flex-container">
-            <a href="#" class="img-wrapper"><img src="calendar.jpg" alt ="Calendar"></a>
-            <a href="#" class="img-wrapper"><img src="clock.jpg" alt ="Clock"></a>
-            <a href="#" class="img-wrapper"><img src="notes.jpg" alt ="Notes"></a>
-            <a href="#" class="img-wrapper"><img src="cytat.jpg" alt ="Quotation"></a>    
-        </div>       
-    </article>
-</section>
-
-<footer id="footer">
-        <h1>CONTACT</h1>
-        <img src="business-card.jpg" alt="business-card-foto">
-        <address>
-            <p>feel free to contact me:</p><br>
-            E-mail:  <a href="kat.choluj@gmail.com">kat.choluj@gmail.com</a><br><br>
-            Phone number:  <a href="tel:601266006">601266006</a>                
-        </address>
-</footer>
-
-</div>
-
+    </div>
 </body>
 
 </html>
