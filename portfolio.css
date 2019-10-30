@@ -253,5 +253,5 @@ address a{
     transition: all
 }
 address a:hover{
-    color: rgb(187, 32, 66);
+    color: rgb(94, 187, 32);
 }
