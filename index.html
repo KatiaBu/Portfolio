@@ -1,82 +1,98 @@
 <!doctype html>
-<html>
+<html lang="pl-PL">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>MyPortfolio</title>
-
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="foto/favicon.png">
+    <link rel="stylesheet" href="styles/portfolio.css">
 </head>
 
 <body>
     <div class="container">
         <header>
-            <img src="mainUpFoto.jpg" alt="portfolio-main-foto">
+            <img src="foto/mainUpFoto.jpg" alt="portfolio-main-foto">
             <nav>
-                <ul id="menu">
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#footer">Contact</a></li>
+                <ul class="menu">
+                    <li>
+                        <a href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#project">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#footer">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-
         <main>
-            <article id="about">
-                <h1>Kilka słów o mnie</h1>
+            <article class="about" id="about">
+                <h2>Kilka słów o mnie</h2>
                 <div class="flex-container">
-                    <div class='about-wrapper'><img src="myFoto.jpg" alt="Mój portret"></div>
+                    <div class='about-wrapper'>
+                        <img src="foto/myFoto.jpg" alt="Mój portret">
+                    </div>
                     <div class='about-desc-wrapper'>
-                        <p>I graduated in oceanography, after a few years in the laboratory, I decided to change my
-                            life.</p>
-                        <p>I started my career as a qa engineer. Testing has become not only my job but also my passion.
-                        </p>
-                        <p>However, I still don't have enough, that's why I'm still developing. Currently, I decided to
-                            try my hand at web technology.</p>
-                        <strong>
-                            <p><a href="#" class=cv>HERE</a>, you can find my resume.</p>
-                        </strong>
+                        <p>I graduated in oceanography, after a few years in the laboratory, I decided to change mylife.</p>
+                        <p>I started my career as a QA engineer. Testing has become not only my job but also my passion.</p>
+                        <p>However, I still don't have enough, that's why I'm still improve my skills. currently I would like
+                            to try my hand at web technologies.</p>
+                        <p>
+                            <a href="#" class=cv>HERE</a>, you can find my resume.</p>
                     </div>
                 </div>
             </article>
-
-            <article id='skills'>
-                <h1>MY SKILLS</h1>
+            <article class='skills' id="skills">
+                <h2>MY SKILLS</h2>
                 <div class="flex-container">
-                    <div class="skills-wrapper"><img src="skills1.jpg" alt="Calendar"></div>
-                    <div class="skills-wrapper"><img src="tools.jpg" alt="Clock"></div>
-                    <div class="skills-wrapper"><img src="cert.jpg" alt="Notes"></a>
+                    <div class="skills-wrapper">
+                        <img src="foto/skills1.jpg" alt="Calendar">
+                    </div>
+                    <div class="skills-wrapper">
+                        <img src="foto/tools.jpg" alt="Clock">
+                    </div>
+                    <div class="skills-wrapper">
+                        <img src="foto/cert.jpg" alt="Notes">
                     </div>
             </article>
-
             <article>
-                <div id='project'>
-                    <h1>PORTFOLIO</h1>
+                <div class='project' id='project'>
+                    <h2>PORTFOLIO</h2>
                 </div>
                 <div class="flex-container">
-                    <a href="#" class="img-wrapper"><img src="calendar.jpg" alt="Calendar"></a>
-                    <a href="#" class="img-wrapper"><img src="clock.jpg" alt="Clock"></a>
-                    <a href="#" class="img-wrapper"><img src="notes.jpg" alt="Notes"></a>
-                    <a href="#" class="img-wrapper"><img src="cytat.jpg" alt="Quotation"></a>
+                    <a href="#" class="img-wrapper">
+                        <img src="foto/calendar.jpg" alt="Calendar" title="Your personal schedule">
+                    </a>
+                    <a href="#" class="img-wrapper">
+                        <img src="foto/clock.jpg" alt="Clock" title="Time everywhere in the world">
+                    </a>
+                    <a href="#" class="img-wrapper">
+                        <img src="foto/cytat.jpg" alt="Quotation" title="Choose a quote of the day">
+                    </a>
+                    <a href="#" class="img-wrapper">
+                        <img src="foto/notes.jpg" alt="Notes" title="Save Your goals and tasks">
+                    </a>
                 </div>
             </article>
         </main>
-
-        <footer id="footer">
-            <h1>CONTACT</h1>
-            <img src="business-card.jpg" alt="business-card-foto">
+        <footer class='footer' id="footer">
+            <h2>CONTACT</h2>
+            <img src="foto/business-card.jpg" alt="business-card-foto">
             <address>
-                <p>feel free to contact me:</p><br>
-                E-mail: <a href="kat.choluj@gmail.com">kat.choluj@gmail.com</a><br><br>
-                Phone number: <a href="tel:601266006">601266006</a>
+                <p>feel free to contact me:</p>
+                <br> E-mail:
+                <a href="kat.choluj@gmail.com">kat.choluj@gmail.com</a>
+                <br>
+                <br> Phone number:
+                <a href="tel:601266006">601266006</a>
             </address>
         </footer>
-
-    </div>
+        </div>
 </body>
 
 </html>

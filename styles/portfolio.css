@@ -33,29 +33,31 @@
         width: 300px;}
 } 
 @media screen and (max-width: 1029px) {
-    #project img {
+    .project img {
         width: 100%;
     }
-    #menu li {
-        font-size: 1 em;
+    .menu li {
+        font-size: 1em;
     }
     .description p {
         font-size: 0.5em;
     }
-    #footer img {
+    .footer img {
         opacity: 0;
     }
-    #footer {
-        background-image: linear-gradient( rgb(10, 10, 10), rgb(231, 225, 225));
-       
+    .footer {
+        background-image: linear-gradient( rgb(10, 10, 10), rgb(231, 225, 225));  
     }
-    #footer address {
+    .footer address {
         border: black solid 2px;
         padding: 15px;       
     }
+    .about-desc-wrapper p:last-child {
+        margin-bottom: 15px;
+    }
 }
 
-h1 {
+h2 {
     font-size: 1.3em;
     text-align: left;
     border: 2px solid black;
@@ -70,7 +72,7 @@ header img {
     display: block;
 }
 
-#menu {
+.menu {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -82,8 +84,7 @@ header img {
     display: flex;
 }
 
-
-#menu li {
+.menu li {
     flex: auto;
     float: left;
     width: 25%;
@@ -95,7 +96,7 @@ header img {
     margin: 0;
 }
 
-#menu a {
+.menu a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,18 +105,17 @@ header img {
     text-decoration: none;
 }
 
-#menu li:hover {
+.menu li:hover {
     background-color: red;
-
 }
 
 @media screen and (max-width:800px) {
-    #menu li {
+    .menu li {
         font-size: 0.7em;
     }
 }
 
-#about {
+.about {
     background-color: rgb(119, 117, 117);
     width: 100%;
     height: auto;
@@ -141,6 +141,10 @@ header img {
     margin: 1px auto;
     width: 80%;
 }
+.about-desc-wrapper p:first-child {
+    margin-top: 15px;
+    text-indent: 1.5em;
+}
 
 .about-desc-wrapper p {
     width: 100%;
@@ -148,15 +152,19 @@ header img {
     color: rgb(14, 13, 13);
     font-size: 1.2em;
 }
+.about-desc-wrapper p:last-child{
+    text-shadow: 1px 1px rgb(250, 249, 248);
+}
 
-.cv {
+p a {
     color: black;
     transition: all 1s ease;
     text-decoration: none;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
-.cv:hover {
+p a:hover {
     color: red;
     font-size: 1.5em;
 }
@@ -174,7 +182,7 @@ header img {
         font-size: 0.9em;}
 }
 
-#skills {
+.skills {
     margin: 2px auto;
     position: relative;
     width: 100%;
@@ -203,15 +211,13 @@ header img {
     }
 }
 
-#project {
-
+.project {
     margin: 1px auto;
     position: relative;
     width: 100%;
 }
 
 .flex-container {
-
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -221,18 +227,22 @@ header img {
 .img-wrapper {
     display: block;
     width: 40%;
-    overflow: hidden;
-    transition: all 0.5s ease;
+    overflow: hidden;  
     margin: 2%;
     margin-top: 0;
-
 }
 
 .img-wrapper img {
+    filter: grayscale(40%);
+    opacity: .6;
     max-width: 100%;
     width: 100%;
     border: 2px solid black;
     max-height: 250px;
+    transition: all 3s ease;
+}
+img[title*="Your"]{
+    border: 2px solid red;
 }
 
 @media screen and (max-width: 800px) {
@@ -240,30 +250,36 @@ header img {
         max-width: 90%;
         width: 90%;
         max-height: 300px;}
-
-    h1 {
+    h2 {
         font-size: 1em;}
 }
 
 .img-wrapper img:hover {
-    border-radius: 10%;
-    border: 10px solid rgb(34, 33, 33);
+    border-radius: 18%;
+    border: 5px solid rgb(34, 33, 33);
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
-#footer {
+img[title*="Your"]:hover{
+    border: 5px solid red;
+}
+
+.footer {
     clear: both;
     bottom: 0;
     width: 100%;
     height: 200px;
     position: relative;
+    margin-bottom: 8%;
 }
 
-#footer img {
+.footer img {
     width: 100%;
     display: block;
 }
 
-#footer address {
+address {
     position: absolute;
     top: 65%;
     left: 52%;
@@ -271,13 +287,17 @@ header img {
     transform: translate(-50%, -50%);
     font-size: 0.8em;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bold;   
+}
+address p{
+    border: black 1px solid;
+    padding-left: 2px;
 }
 
 address a {
     text-decoration: none;
     color: rgb(17, 16, 75);
-    transition: all
+    transition: all;
 }
 
 address a:hover {
